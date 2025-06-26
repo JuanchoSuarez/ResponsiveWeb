@@ -1,4 +1,21 @@
-<html>
+<!DOCTYPE html> 
+<!-- 'DOCTYPE' va a decirle al navegador que este es el estardar de HTML5 -->
+<html lang="es">
+  <!-- Se le agrega el idioma del documento como lang=" -->
+  <head>
+    Venezuelan Real Life
+    <!-- Acá también se van a utilizar los 'meta' que son etiquetas que definen la información sobre la página  -->
+    <!-- '<meta charset="UTF-8">' va a decirle al navegador que soporta ñ, tildes, emojis,  -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content ="width=device-width, initial-sacle=1.0">
+    <!-- hace que la pagina se adapte al tamaño de celulares o tables, sea responsive -->
+    <meta name="description" content ="Página de prueba en HTML5">
+    <!-- define la descripción de la página que aparece en Google -->
+    <meta name="author" content ="Juancho">
+    <!-- Le dice al navegdor y buscadores quien es el autor -->
+    <meta http-equiv="refresh" content="10"; url="https://www.freecodecamp.org">
+    <!-- va a esperar 10 segundos en la página y lo manda al URL que se coloque -->
+  </head>
    <body>
 
       <section>
@@ -130,16 +147,61 @@
     </section>
     
     <section>
-     <!-- 'legend' se usa dentro del 'fieldset'  -->
+     <!-- 'legend' se usa dentro del 'fieldset' y va a dar un tipo de caption para guiar, que se debe poner en esa fieldset, va en la parte de arriba del fieldset -->
       <fieldset>
-        <h2>Marcas de pañuelos, claro que si</h2>
-        <legend>no sea sapo pirobo
-          <input type="radio" name="pañuelo">Rendy
-          <input type="radio" name="pañuelo">Klennex
+        <legend>
+          <h3>Esta es la leyenda</h3>
         </legend>
+           <h4>¿Cuál es su marca de pañuelos favorita?</h4>
+            <label> <input type="radio" name="pañuelo" id="rendy">Rendy </label>
+            <label> <input type="radio" name="pañuelo">Klennex </label>
       </fieldset>
+
+      <!-- 'checkbox' es el tipo de input que permite seleccionar más de una respuesta -->
+       <h3>¿Qué victorias has cumplido ya?</h3>
+       <label><input type="checkbox" id="fisica">Victorio física </label>
+       <label><input type="checkbox">Victorio mental id="mental"</label>
+       <label><input type="checkbox">Victoria espiritual </label>
      
     </section>
 
+<!-- CORRECCIONES  que hace CHAT sobre el código, till now -->
+<!-- El 'radio' tiene que llevar el mismo nombre o incluir algo que se relacione con el otro radio del que es opción la pregunta -->
+<!-- Si no se tiene dentro de cada input un name y value, no sirve como dato para el enviar en el formulario -->
+<!-- El 'name' es lo que se manda del formulario, value es el valor asociado -->
+
+     <section>
+          <!-- 'label for' va a relacionar el id del input con lo que se pone en el for -->
+           <h3>Escoja los que escucha:</h3>
+           <input type="checkbox" name="escucha" id="deiv" value="deiv">
+           <label for="deiv">DeiV</label>
+
+           <input type="checkbox" name="escucha" id="feid" value="feid">
+           <label for="feid">Feid</label>
+
+           <input type="checkbox" name="escucha" id="badbunny" value="badbunny">
+           <label for="badbunny">Bad Bunny</label>
+
+           <!-- Para hacer que un valor por default esté seleccionado por default, se le pone 'checked' en mitad del input y type -->
+            <h3>Ahora hablemos sobre marcas de audifonos, si no escoge ninguno, por default se escoge HyperX</h3>
+            <input checked type="radio" id="HyperX" value="HyperX" name="audi">
+            <label for="HyperX">HyperX</label>
+            <input type="radio" id="Senheiser" value="Senheiser" name="audi">
+            <label for="Senheiser">Senheiser</label>
+            <input type="radio" id="airpodsmax" value="AirPodsMax" name="audi">
+            <label for="airpodsmax">AirPodsMax</label>
+            <!-- Si se ponen 2 inputs como checked, se escogerá el úlitmo, igual a como se lee el codigo de arriba hacia abajo -->
+     </section>
+
+     <section>
+      <!-- Se le conoce como 'footer' a la parte de abajo de un documento, donde se encuentra información como las redes sociales, el Copyright, etc.. -->
+       <footer>
+        <p>Acuérdese que <a href="https://es.wikipedia.org/wiki/Existencia_de_Dios" taget="_blank">existen</a> los 'p' de parragraph para poner información como esta, así no sea en un h o en uun input, que es lo que he venido trabajando.</p>
+       </footer>
+     </section>
    </body>
+   <!-- Todo lo que se ha trabajado, lo que se tiene que MOSTRAR en la página, es lo que va en el body. Pero el 'head' va a ser la sección donde se agregue metadata como titulos, stylesheets (me suena a CSS) y demás información que no necesariamente se tiene que mostrar en la página -->
+   <!-- 'title' va a decirle al navegador va a poner en la barra del titulo o en el tab de la página -->
+   <title>SUAROSKYS BRAINROT PAGE</title>
+
 </html>
