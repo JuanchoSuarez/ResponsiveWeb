@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<!-- 'DOCTYPE' va a decirle al navegador que este es el estardar de HTML5 -->
+<html lang="es">
+  <!-- Se le agrega el idioma del documento como lang=" -->
+  <head>
+    Venezuelan Real Life
+    <!-- Acá también se van a utilizar los 'meta' que son etiquetas que definen la información sobre la página  -->
+    <!-- '<meta charset="UTF-8">' va a decirle al navegador que soporta ñ, tildes, emojis,  -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content ="width=device-width, initial-sacle=1.0">
+    <!-- hace que la pagina se adapte al tamaño de celulares o tables, sea responsive -->
+    <meta name="description" content ="Página de prueba en HTML5">
+    <!-- define la descripción de la página que aparece en Google -->
+    <meta name="author" content ="Juancho">
+    <!-- Le dice al navegdor y buscadores quien es el autor -->
+    <meta http-equiv="refresh" content="10"; url="https://www.freecodecamp.org">
+    <!-- va a esperar 10 segundos en la página y lo manda al URL que se coloque -->
+  </head>
+   <body>
+
+      <section>
+      <main>
+         <h1>Esta sería la importancia de un h1</h1>
+             <p>Ahora, este es el elemento 'p' el cual se utiliza para escribir un parrafo debajo de cada elemento 'h' que se construya</p>
+      </main>
+     
+         <h2>De menor importancia, un h2</h2>
+     </section>
+  
+     <section>
+        <!-- Para crear un comentario, en VSCode se pueden utilizar los shortcuts Ctrl+K Ctrl+C -->
+        <!-- Ahora, lo más importante del codigo y lo que no se va a repetir en otras partes es el MAIN como en cualquier lenguaje de programación -->
+        <!-- Para poner imagenes se utiliza el elemento <img>, se usa 'src' as SOURCE para indicar el URL de la foto que se busca mostrar -->
+    
+        <img src='girasol.jpg' alt="Par de girasoles que me recuerdan a las flores favoritas de una pelada"> 
+        <p>Se puede empezar el texto acá <a href="https://www.youtube.com">Presione aquí para poder abrir youtube</a> y seguirlo al final del hipervínculo </p>
+        <p>¿Es verdad que todos <a href="https://dle.rae.es/falso">amamos</a> a los negros?"</p>
+    
+        <!-- Para abrir una nueva ventana se usa el ancla <a href="..." target="_blank"> -->
+        <p>Probando la apertura de una nueva ventana... <a href="https://www.diep.io" target="_blank">Juegue mas bien</a></p>
+    
+        <!-- Se puede hacer que una imagen también sea un link y que se abra en una ventana nueva -->
+        <a href="https://dle.rae.es/falso" target="_blank">
+          <img src='Falso.jpg' alt="No se, tal vez es la verdad">
+        </a>
+    
+        <!-- Lo que sigue en el curso de FreeCodeCamp son las secciones, usadas para dividir partes de la página web, evidentemente -->
+     </section>
+  
+     <section>
+        <!-- Para crear una lista sin orden de items, se usa 'ul' e 'il' para enlistar   -->
+        <!-- Para crear una lista con elementos enumerados numericamente, se utiliza 'ol' -->
+         <h2>Razones por las que ir a Cali:</h2>
+         <ul>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li>Valeria</li>
+         </ul>
+         <h3>Gracias por ver :D</h3>
+     </section>
+  
+     <section>
+        <!-- Ahora si vamos a ver las captions de las imagenes, eso se hace con 'figcaption', la imagen tiene que estar en una 'figure' para poder ponerle caption -->
+         <figure>
+           <img src='myke.jpg' alt="Se supone que es la ricura de Myke Towers así mojadito">
+           <figcaption> <a href="https://es.wikipedia.org/wiki/Myke_Towers" target="_blank">Myke</a> <em>mojadito</em>; gas</figcaption>
+           <!-- <em> va a poner la palabra en italicas -->
+           <!-- <strong> va a funcionar como negrilla -->
+         </figure>   
+        <h3>Top canciones del viejo Myke:</h3>
+         <ol>
+           <li><strong>Almas Gemelas</strong></li>
+           <li>Adivino</li>
+           <li>No podemos - Remix</li>
+           <li>Jovenes Millonarios</li>
+         </ol>
+     </section>
+  
+    <section>
+      <!-- Para reunir información del usuario se va a utilizar el 'form' y se usa un 'action' que dice que data se tiene que enviar -->
+      <!-- 'input' deja saber que se va a recoger data y es void  -->
+      <!-- 'type' es el tipo de dato que se va a usar como input, 'text' para recoger texto.. -->
+      <!-- 'name' dentro del input es el nombre de la variable que se está pidiendo -->
+      <!-- 'placeholder' va a ser una pista de que tipo de información se espera que el usuario digite -->
+      <!-- Se puede poner que sea obligatorio poner una respuesta valida con 'required' -->
+      <!-- Se puede crear un botón que se pueda clickear, obviamente, con 'button'. Estos tambien tienen un 'type'-->
+      <!-- Si solo quiero 1 respuesta, se usa 'radio' como input type -->
+
+       <h4>¿Cuál es el mejor artista con el que hace duo Michael Jordan?</h4>
+
+       <form action="x">
+        <input type="text" placeholder="nose todavia">
+       </form>
+    
+        <!-- 'label' se va a utilizar cuando quiera que en el 'radio', cuando se clickee sobre el texto, también sea como darle click al botón -->
+        <label>
+        <input type="radio" name="respuesta1" value="Zooofilia">Zoofilia <br>
+        </label>
+        <!-- 'br' es un break el cual hace un salto de linea, y no tiene etiqueta de cierra, el siguiente es un ejemplo de su uso -->
+         Digite su nombre:
+         <input type="text" name="nombre" placeholder="Juanito Alminaña">
+         Digite su edad:
+         <input type="text" name="edad" placeholder="66"> <br> <br>
+
+        <input type="radio" name="respuesta2" value="Necrofilia">Necrofilia
+         <input type="text" name="nombre" placeholder="Ej. Eladio Carrion" required>
+         <button type="submit">Yo digo que <strong>este</strong> cabrón</button>
+
+        <!-- 'id' se va a utilizar para darle un id único a un elemento  -->
+
+          <h3>Que sexo erí? </h3>
+          <input type="radio" id="hombre" name="sexo">Hombre <br>
+        </label>
+        <label>
+          <input type="radio" id="mujer" name="sexo">Mujer
+        </label>
+
+    </section>
+    
+    <section>
+        <!-- Solo quiero seleccionar una respuesta, es decir que la otra se deseleccione automaticamente, ambos radios deben tener el mismo nombre.. -->
+
+        <h3>¿Cuál es su mascota actual?</h3>
+
+        <label>
+          <input type="radio" name="mascota" value="perro">Perro
+        </label>
+        <label>
+          <input type="radio" name="mascota" value="canario">Canario
+        </label>
+        <label>
+          <input type="radio" name="mascota" value="gato">Gato
+        </label>
+
+        <!-- 'fieldset' es una caja que se encarga de agrupar los elementos indexados -->
+        <fieldset>
+         <h4>¿Qué marca de computadores portátiles prefiere Ud?</h4>
+          <input type="radio" name="portatil" value="asus">Asus
+           <img src="asus.jpg" alt="imagen de un portatil asus">
+          <input type="radio" name="portatil" value="mac">Mac
+           <img src="mac.jpg" alt="imagen de un portatil mac">
+          <input type="radio" name="portatil" value="hp">Hp
+           <img src="hp.jpg" alt="imagen de un portatil hp">
+        </fieldset>
+
+    </section>
+    
+    <section>
+     <!-- 'legend' se usa dentro del 'fieldset' y va a dar un tipo de caption para guiar, que se debe poner en esa fieldset, va en la parte de arriba del fieldset -->
+      <fieldset>
+        <legend>
+          <h3>Esta es la leyenda</h3>
+        </legend>
+           <h4>¿Cuál es su marca de pañuelos favorita?</h4>
+            <label> <input type="radio" name="pañuelo" id="rendy">Rendy </label>
+            <label> <input type="radio" name="pañuelo">Klennex </label>
+      </fieldset>
+
+      <!-- 'checkbox' es el tipo de input que permite seleccionar más de una respuesta -->
+       <h3>¿Qué victorias has cumplido ya?</h3>
+       <label><input type="checkbox" id="fisica">Victorio física </label>
+       <label><input type="checkbox">Victorio mental id="mental"</label>
+       <label><input type="checkbox">Victoria espiritual </label>
+     
+    </section>
+
+<!-- CORRECCIONES  que hace CHAT sobre el código, till now -->
+<!-- El 'radio' tiene que llevar el mismo nombre o incluir algo que se relacione con el otro radio del que es opción la pregunta -->
+<!-- Si no se tiene dentro de cada input un name y value, no sirve como dato para el enviar en el formulario -->
+<!-- El 'name' es lo que se manda del formulario, value es el valor asociado -->
+
+     <section>
+          <!-- 'label for' va a relacionar el id del input con lo que se pone en el for -->
+           <h3>Escoja los que escucha:</h3>
+           <input type="checkbox" name="escucha" id="deiv" value="deiv">
+           <label for="deiv">DeiV</label>
+
+           <input type="checkbox" name="escucha" id="feid" value="feid">
+           <label for="feid">Feid</label>
+
+           <input type="checkbox" name="escucha" id="badbunny" value="badbunny">
+           <label for="badbunny">Bad Bunny</label>
+
+           <!-- Para hacer que un valor por default esté seleccionado por default, se le pone 'checked' en mitad del input y type -->
+            <h3>Ahora hablemos sobre marcas de audifonos, si no escoge ninguno, por default se escoge HyperX</h3>
+            <input checked type="radio" id="HyperX" value="HyperX" name="audi">
+            <label for="HyperX">HyperX</label>
+            <input type="radio" id="Senheiser" value="Senheiser" name="audi">
+            <label for="Senheiser">Senheiser</label>
+            <input type="radio" id="airpodsmax" value="AirPodsMax" name="audi">
+            <label for="airpodsmax">AirPodsMax</label>
+            <!-- Si se ponen 2 inputs como checked, se escogerá el úlitmo, igual a como se lee el codigo de arriba hacia abajo -->
+     </section>
+
+     <section>
+      <!-- Se le conoce como 'footer' a la parte de abajo de un documento, donde se encuentra información como las redes sociales, el Copyright, etc.. -->
+       <footer>
+        <p>Acuérdese que <a href="https://es.wikipedia.org/wiki/Existencia_de_Dios" taget="_blank">existen</a> los 'p' de parragraph para poner información como esta, así no sea en un h o en uun input, que es lo que he venido trabajando.</p>
+       </footer>
+     </section>
+   </body>
+   <!-- Todo lo que se ha trabajado, lo que se tiene que MOSTRAR en la página, es lo que va en el body. Pero el 'head' va a ser la sección donde se agregue metadata como titulos, stylesheets (me suena a CSS) y demás información que no necesariamente se tiene que mostrar en la página -->
+   <!-- 'title' va a decirle al navegador va a poner en la barra del titulo o en el tab de la página -->
+   <title>SUAROSKYS BRAINROT PAGE</title>
+
+</html>
