@@ -1,0 +1,57 @@
+/* Cuando se inicia con un . se hace referencia a una clase, es decir que varios elementos van a utilizar esta regla */
+.centrado {
+    text-align: center;
+}
+
+/* Con el # de inicio, solo se hace referencia a 1 elemento, haciendo referencia al ID*/
+#titulo-pagina {
+    text-align: center;
+    color: crimson;
+}
+
+/* Se le cambia el color el background definiendo como elemento el body y dandole las reglas */
+body {
+    background-color: burlywood;
+    /*background-image: url(bob\ feo.jpeg); */
+
+}
+
+#sapo {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+#img {
+}
+
+/* Haciendo paddings de espacio externo hacia el contenido, si yo tengo los 4 lados, puedo resumirlo solo haciendo un padding:  */
+#article {
+    width: 300px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* Teniendo en cuenta que los caracteres del precio son mnenos que el nombre de la bebida, se le da un 75% de margen al nombre y 25% al precio */
+.bebida {
+    width: 75%;
+    text-align: left;
+}
+
+.precio {
+    width: 25%;
+    text-align: right;
+}
+
+/* display dice como se deben mostrar o modificar los bloques. En este caso se ponen todos los p que estén en la clase .item del articulo según las reglas: */
+.item p {
+    display: inline-block; 
+}
+
+/* Se pueden aniadar  */
+.postre, .postre2 {
+    width: 75%;
+    text-align: left;
+}

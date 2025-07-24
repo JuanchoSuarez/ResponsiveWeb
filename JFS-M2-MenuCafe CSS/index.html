@@ -1,17 +1,75 @@
 <!-- En este proyecto voy a ver las bases de Cascading Style Sheet haciendo el menú de un café. Dice como deben ser mostrados los elementos de HTML -->
 <!-- Siempre (como en cualquier index) se debe poner el !DOCTYPE html y si quiere lang="es" -->
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Primer acercamiento a CSS">
         <meta name="author" content="Juancho">
-    </head> 
+        <title>Menu Cafetería</title>
+        <!-- Para tener control sobre lo que se ve en pantalla, se agrega 'style' -->
+        <!-- Dentro va a tener un elemento (h1, p, img) { propiedad (color, tamaño): valor (20px, rojo, ...) }-->
+        <!-- Un ejemplo es el siguiente, donde se va a estilizar un titulo, si yo digo h1 como elemento, todos los h1s van a seguir esa regla que yo ponga en el stilo -->
+        <style>
+            /* Tenia estructuras de CSS acá, pero ahora están en STYLES.CSS */
+        </style>
+<!-- Lo que he hecho es poner todos los elementos con esta regla, pero como voy a poner muchos mas a lo largo del index, creo un archivo styles.css y linkeo el stilo al elemento -->
+
+<!-- Si o Si se tiene que poner la referencia del styles.css en el head del HTML: -->
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
     <body>
-     <section>
-      <main>
-        
-      </main>
-     </section>
+      <!-- Para yo darle reglas al siguiente h1, según su id puedo decirle, en styles, que hacer: -->
+      <h1 id="titulo-pagina">Empezamos con esta vuela, como es, como sería</h1>
+
+      <p class="centrado">Esto sigue siendo Main, luego va la sección, 1 para cafés, otra para postres</p>
+     </main>
+      <div id="sapo">
+        <h1>Cafetería doña Mari Juana</h1>
+        <img src="sapo feo.jpeg" alt="Es un sapo re feo">
+        <br>
+        <h2>Drinkables</h2>
+      </div>
+
+      <!--
+      <div id="img">
+        <h2>Imagen puesta en styles:</h2>
+      </div>
+      -->
+
+      <div id="article">
+       <article class="item">
+      <!-- En el ejemplo del menú de café, se utiliza un articulo para poner elementos relacionados como el sabor del cafe y su precio -->
+        <br>
+        <p class="bebida">Tinto</p><p class="precio">$3.300</p>
+      <!-- p es un elemento de tipo bloque que toma todo el espacio del padre, para que sea inline, en css se pone... (en .item) -->
+       </article>
+
+       <article class="item">
+        <p class="bebida">Perico</p><p class="precio">$90.000???</p>
+       </article>
+
+       <article class="item">
+        <p class="bebida">Gato atorado</p><p class="precio">$16.000</p>
+       </article>
+
+       <article class="item">
+         <p class="bebida">Semen de caballo por litro</p><p class="precio">$1.000</p>
+       </article>
+      </div>
+      
+      <div id="article">
+       <section class="item">
+        <br>
+        <h2 class="centrado">Postres</h2>
+        <p class="postre">Gelatina con leche condesada</p><p class="precio">$12.300</p>
+        <p class="postre">Torta tres leches</p><p class="precio">$20.000</p>
+        <p class="postre">Masmellos</p><p class="precio">$5.000</p>
+       </section>
+      </div>
+
+      </section>
+    
     </body>
  </html>
